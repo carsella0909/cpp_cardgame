@@ -1,0 +1,142 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CardGameApp, Version=0.0.*, Culture=고정 언어(고정 국가): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Holdemproject4.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.Card2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Rank, Suit): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getRank(): PrivateScope, Public, HideBySig
+    getSuit(): PrivateScope, Public, HideBySig
+    toString(): PrivateScope, Public, HideBySig
+Struct CardGameApp.Card2+Suit: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Suit HEARTS = 0 : Public, Static, Literal, HasDefault
+    Suit DIAMONDS = 1 : Public, Static, Literal, HasDefault
+    Suit CLUBS = 2 : Public, Static, Literal, HasDefault
+    Suit SPADES = 3 : Public, Static, Literal, HasDefault
+Struct CardGameApp.Card2+Rank: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Rank TWO = 2 : Public, Static, Literal, HasDefault
+    Rank THREE = 3 : Public, Static, Literal, HasDefault
+    Rank FOUR = 4 : Public, Static, Literal, HasDefault
+    Rank FIVE = 5 : Public, Static, Literal, HasDefault
+    Rank SIX = 6 : Public, Static, Literal, HasDefault
+    Rank SEVEN = 7 : Public, Static, Literal, HasDefault
+    Rank EIGHT = 8 : Public, Static, Literal, HasDefault
+    Rank NINE = 9 : Public, Static, Literal, HasDefault
+    Rank TEN = 10 : Public, Static, Literal, HasDefault
+    Rank JACK = 11 : Public, Static, Literal, HasDefault
+    Rank QUEEN = 12 : Public, Static, Literal, HasDefault
+    Rank KING = 13 : Public, Static, Literal, HasDefault
+    Rank ACE = 14 : Public, Static, Literal, HasDefault
+Class CardGameApp.Deck2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    shuffle(): PrivateScope, Public, HideBySig
+    drawCard(): PrivateScope, Public, HideBySig
+Class CardGameApp.Player2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setHoleCards(Card2, Card2): PrivateScope, Public, HideBySig
+    getName(): PrivateScope, Public, HideBySig
+    getChips(): PrivateScope, Public, HideBySig
+    getHoleCards(): PrivateScope, Public, HideBySig
+    isAIPlayer(): PrivateScope, Public, HideBySig
+    bet(Int32): PrivateScope, Public, HideBySig
+    addChips(Int32): PrivateScope, Public, HideBySig
+    resetBet(): PrivateScope, Public, HideBySig
+    getCurrentBet(): PrivateScope, Public, HideBySig
+    setFolded(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    hasFolded(): PrivateScope, Public, HideBySig
+Class CardGameApp.PokerTable: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addPlayer(Player2): PrivateScope, Public, HideBySig
+    dealHoleCards(): PrivateScope, Public, HideBySig
+    dealFlop(): PrivateScope, Public, HideBySig
+    dealTurn(): PrivateScope, Public, HideBySig
+    dealRiver(): PrivateScope, Public, HideBySig
+    startNewHand(): PrivateScope, Public, HideBySig
+    postBlinds(): PrivateScope, Public, HideBySig
+    playRound(): PrivateScope, Public, HideBySig
+    evaluateHand(List`1): PrivateScope, Public, HideBySig
+    isFlush(List`1): PrivateScope, Public, HideBySig
+    isStraight(List`1): PrivateScope, Public, HideBySig
+    isRoyalFlush(List`1): PrivateScope, Public, HideBySig
+    isStraightFlush(List`1): PrivateScope, Public, HideBySig
+    isFourOfAKind(List`1): PrivateScope, Public, HideBySig
+    isFullHouse(List`1): PrivateScope, Public, HideBySig
+    isThreeOfAKind(List`1): PrivateScope, Public, HideBySig
+    isTwoPair(List`1): PrivateScope, Public, HideBySig
+    isOnePair(List`1): PrivateScope, Public, HideBySig
+    getHighCard(List`1): PrivateScope, Public, HideBySig
+    determineWinner(): PrivateScope, Public, HideBySig
+    getCombinations(List`1, Int32, Int32, List`1, List`1): PrivateScope, Public, HideBySig
+    distributePot(Player2): PrivateScope, Public, HideBySig
+    getPlayerAction(Player2): PrivateScope, Public, HideBySig
+    getPlayers(): PrivateScope, Public, HideBySig
+    getCommunityCards(): PrivateScope, Public, HideBySig
+    getPot(): PrivateScope, Public, HideBySig
+    getCurrentBet(): PrivateScope, Public, HideBySig
+Class CardGameApp.TexasHoldemForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.IndianPokerForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.Card: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String suit : Public
+    Int32 number : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class CardGameApp.Player: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String name : Public
+    System.Collections.Generic.List`1[CardGameApp.Card] hand : Public
+    Int32 score : Public
+  Methods:
+    DrawCard(Card): PrivateScope, Public, HideBySig
+    AddScore(Int32): PrivateScope, Public, HideBySig
+    GetScore(): PrivateScope, Public, HideBySig
+Class CardGameApp.MightyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.ThiefCatchForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.OneCardForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.GameSelectionForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.LoadGameForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.SettingsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CardGameApp.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
